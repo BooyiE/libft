@@ -22,17 +22,3 @@ size_t	ft_strlen(const char *str)
 		length++;
 	return (length);
 }
-
-#include <stdio.h>
-
-int main(void)
-{
-	size_t len;
-	char *str;
-
-	str = "skhumkane xaba";
-	len = ft_strlen(str);
-
-	printf("%zu\n", len);
-	return (0);
-}
