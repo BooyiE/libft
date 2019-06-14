@@ -6,12 +6,13 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:59:05 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/06/04 12:25:29 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/14 16:52:52 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <string.h>
+#include <stdio.h>
 
 int	ft_strcmp(const char *s1, const char *s2)
 {
