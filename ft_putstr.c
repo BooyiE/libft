@@ -6,7 +6,7 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/13 17:15:44 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/06/13 17:33:53 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/15 17:18:17 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr(char const *s)
 	size_t	i;
 
 	i = 0;
+	if (s == 0)
+		return ;
 	while (s[i])
 	{
 		ft_putchar(s[i]);
