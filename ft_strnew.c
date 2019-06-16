@@ -6,7 +6,7 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 14:48:04 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/06/15 04:52:06 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/16 17:07:13 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,3 @@ char	*ft_strnew(size_t size)
 {
 	return ((char *)ft_memalloc(size + 1));
 }
-
