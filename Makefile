@@ -6,7 +6,7 @@
 #    By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/04 12:59:27 by bphofuya          #+#    #+#              #
-#    Updated: 2019/06/14 20:37:40 by bphofuya         ###   ########.fr        #
+#    Updated: 2019/06/18 14:18:18 by bphofuya         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,6 +66,7 @@ SRC =	ft_isascii.c \
 		ft_strequ.c \
 		ft_strmapi.c \
 		ft_strrchr.c \
+		ft_isspace.c \
 
 OBJ = $(SRC:.c=.o)
 
