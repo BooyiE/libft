@@ -6,7 +6,7 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 13:00:16 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/06/14 18:50:15 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/18 14:17:45 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <string.h>
-# include <ctype.h>
 # include <stdlib.h>
 
 void	*ft_memset(void *b, int c, size_t len);
@@ -71,5 +70,6 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+int		ft_isspace(int c);
 
 #endif
