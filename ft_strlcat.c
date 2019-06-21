@@ -6,37 +6,27 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 13:01:04 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/05/31 13:35:54 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/21 22:25:47 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
-	size_t j;
-	size_t apend_size;
-	size_t len_dst;
+	size_t	i;
+	size_t	j;
 
+	i = 0;
 	j = 0;
-	i = ft_strlen(dst);
-	len_dst = i;
-	if (dstsize == 0 || i >= dstsize)
+	while (dst[i] && i < dstsize)
+		i++;
+	while ((src[j]) && ((i + j + 1) < dstsize))
 	{
-		return (dstsize + ft_strlen(src));
+		dst[i + j] = src[j];
+		j++;
 	}
-	else
-	{
-		apend_size = dstsize - i - 1;
-		while (j < apend_size)
-		{
-			dst[i] = src[j];
-			i++;
-			j++;
-		}
-		dst[i] = '\0';
-	}
-	return (len_dst + ft_strlen(src));
+	if (i != dstsize)
+		dst[i + j] = '\0';
+	return (i + ft_strlen(src));
 }
