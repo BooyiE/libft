@@ -6,7 +6,7 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 11:49:12 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/06/14 18:51:41 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/21 15:50:40 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
+	while (i < len)
+	{
+		dst[i] = '\0';
+		i++;
+	}
 	return (dst);
 }
