@@ -6,35 +6,42 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 14:08:53 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/06/18 14:18:48 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/06/23 11:56:44 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+static int	ft_atoicheck(int sign)
 {
-	int			i;
-	int			neg;
-	long long	result;
+	if (sign == -1)
+		return (0);
+	return (-1);
+}
 
-	i = 0;
-	neg = 1;
+int			ft_atoi(const char *str)
+{
+	int	result;
+	int	i;
+	int	sign;
+
 	result = 0;
+	i = 0;
+	sign = 1;
 	while (ft_isspace(str[i]))
 		i++;
-	while (str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-		{
-			neg = neg * -1;
-		}
+			sign = -1;
 		i++;
 	}
-	while (ft_isdigit(str[i]))
+	while (str[i] != '\0' && ft_isdigit(str[i]) == 1)
 	{
-		result = result * 10 + (str[i] - '0');
+		result = (result * 10) + str[i] - '0';
 		i++;
 	}
-	return (neg * result);
+	if (i >= 20)
+		return (ft_atoicheck(sign));
+	return (result * sign);
 }
