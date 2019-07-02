@@ -6,7 +6,7 @@
 /*   By: bphofuya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 14:08:53 by bphofuya          #+#    #+#             */
-/*   Updated: 2019/07/02 13:28:07 by bphofuya         ###   ########.fr       */
+/*   Updated: 2019/07/02 14:06:02 by bphofuya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ static int	ft_atoicheck(int sign)
 
 int			ft_atoi(const char *str)
 {
-	long	result;
-	long int  i;
-	int	sign;
+	long		result;
+	long int	i;
+	int			sign;
 
 	result = 0;
 	i = 0;
